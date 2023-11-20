@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Nice Young Cat | 10k Gold Chain</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,600&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <img src="images/logo.png" width="125px">
+          </div>
+          <nav>
+            <ul id="MenuItems">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="about.html">About Us</a></li>
+            </ul>
+          </nav>
+          <a href="cart.html"><img src="images/cart.png" width="30 px" height="30px"></a>
+          <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+      </div>
+
+      <div class="small-container single-product">
+        <div class="row">
+          <div class="col-2">
+              <img src="images/product-3.jpg" width="100%" id="ProductImg">
+          </div>
+          <div class="col-2">
+            <p>Home/ Products</p>
+            <h1>10k Gold Chain</h1>
+            <h4>$150.00</h4>
+            <input type="number" value="1">
+            <a href="cart.html" class="Add to Cart">Add to Cart</a>
+            <br>
+            <h3>Product Details <i class="fa fa-indent"></i></h3>
+            <br>
+            <p>Gold Chain Necklace, a statement piece that embodies elegance, sophistication, and timeless style. Crafted with meticulous attention to detail, this gold chain is a versatile accessory that adds a touch of luxury.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="small-container">
+        <div class="row row-2">
+          <h2>Related Products</h2>
+          <a href="products.html">View More</a>
+        </div>
+      </div>
+
+      <div class="small-container">
+        <div class="row">
+          <div class="col-4">
+            <a href="product_10.html">
+              <img src="images/product-10.jpg">
+              <h4>White Button Down</h4>
+              <p>$35.00</p>
+            </a>
+          </div>
+          <div class="col-4">
+            <a href="product_11.html">
+              <img src="images/product-11.jpg">
+              <h4>Floral Button Down T-shirt</h4>
+              <p>$35.00</p>
+            </a>
+          </div>
+          <div class="col-4">
+            <a href="product_12.html">
+              <img src="images/product-12.jpg">
+              <h4>Black Hoodie</h4>
+              <p>$60.00</p>
+            </a>
+          </div>
+          <div class="col-4">
+            <a href="product_1.html">
+              <img src="images/product-1.jpg">
+              <h4>Circular Framed Sunglasses</h4>
+              <p>$15.00</p>
+            </a>
+          </div>
+        </div> 
+      </div>
+          
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col-1">
+              <h3>Download Our App</h3>
+              <p>Download App for Android and ios mobile phone.</p>
+              <div class="app-logo">
+                <img src="images/play-store.png">
+                <img src="images/app-store.png">
+              </div>
+            </div>
+            <div class="footer-col-2">
+              <img src="images/logo.png">
+              <p>“Dress Like a Cat and Stay Stylish” – Nice Young Cat</p>
+            </div>
+          </div>
+          <hr>
+          <p class="copyright">Copyright 2023 - Nice Young Cat</p>
+        </div>
+      </div>
+
+      <script>
+        var MenutItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+          if(MenuItems.style.maxHeight == "0px")
+            {
+              MenuItems.style.maxHeight = "200px";
+            }
+          else
+            {
+              MenuItems.style.maxHeight = "0px";
+            }
+        }
+      </script>
+
+      <script>
+        var ProductImg = document.getElementById("ProductImg")
+        var SmallImg = document. getElementByClassName("small-img")
+
+            SmallImg[0].onclick = function()
+            {
+                ProductImg.src = SmallImg[0].src;
+            }
+            SmallImg[1].onclick = function()
+            {
+                ProductImg.src = SmallImg[0].src;
+            }
+            SmallImg[2].onclick = function()
+            {
+                ProductImg.src = SmallImg[0].src;
+            }
+            SmallImg[3].onclick = function()
+            {
+                ProductImg.src = SmallImg[0].src;
+            }
+      </script>
+
+    </body>
+  </html>
